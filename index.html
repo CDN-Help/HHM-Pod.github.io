@@ -3,27 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Podcast Feed</title>
+    <title>Holy Hot Mess Podcast</title>
     <style>
-        /* Some basic styling */
-        body {
-            font-family: Arial, sans-serif;
+        /* Reset styles */
+        body, h1, h2, h3, p, ul, li {
             margin: 0;
             padding: 0;
         }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        #container {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        header h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        header p {
+            font-size: 18px;
+            color: #666;
+        }
+
+        /* Podcast list */
         #podcast-list {
             list-style-type: none;
             padding: 0;
         }
+
         .podcast-item {
-            margin-bottom: 20px;
+            margin-bottom: 40px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 20px;
+        }
+
+        .podcast-item h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .podcast-item p {
+            font-size: 16px;
+            color: #666;
+        }
+
+        .podcast-item a {
+            display: inline-block;
+            padding: 8px 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+
+        .podcast-item a:hover {
+            background-color: #0056b3;
         }
     </style>
 </head>
 <body>
-    <h1>Podcast Feed</h1>
+    <div id="container">
+        <!-- Header -->
+        <header>
+            <h1>Holy Hot Mess Podcast</h1>
+            <p>A conversational Christian podcast with real-life stories, interviews, and practical advice from those journeying with Jesus through messy life.</p>
+        </header>
 
-    <ul id="podcast-list"></ul>
+        <!-- Podcast List -->
+        <ul id="podcast-list">
+            <!-- Podcast items will be dynamically added here -->
+        </ul>
+    </div>
 
     <script>
         // URL of the RSS podcast feed
@@ -43,10 +110,9 @@
 
                 // Add each podcast item to the list
                 items.forEach(item => {
-                    const title = item.querySelector("title").textContent;
-                    const description = item.querySelector("description").textContent;
+                    const title = item.querySelector("title")?.textContent || "No Title";
+                    const description = item.querySelector("description")?.textContent || "No Description";
                     const link = item.querySelector("enclosure")?.getAttribute("url") || "#";
-
                     const listItem = document.createElement("li");
                     listItem.classList.add("podcast-item");
                     listItem.innerHTML = `
