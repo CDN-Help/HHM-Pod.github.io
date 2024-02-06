@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+  <channel>
+    <title>Holy Hot Mess</title>
+    <link>http://example.com/podcast</link>
+    <description>A conversational Christian podcast with real life stories, interviews and practical advice from those journeying with Jesus through messy life. holyhotmessmom@gmail.com</description>
+    <language>en-us</language>
+    <pubDate>Thu, 01 Feb 2024 05:00:00 -0600</pubDate>
+    <lastBuildDate>Sat, 05 Feb 2024 12:00:00 GMT</lastBuildDate>
+    <copyright>Copyright Heather Yarrington LLC 2018 All rights reserved.</copyright>
+    <category>Religion & Spirituality:Christianity</category>
+    <docs>http://www.rssboard.org/rss-specification</docs>
+    <itunes:author>Heather Yarrington</itunes:author>
+    <itunes:summary>A conversational Christian podcast with real life stories, interviews and practical advice from those journeying with Jesus through messy life. holyhotmessmom@gmail.com</itunes:summary>
+    <itunes:owner>
+      <itunes:name>Heather Yarrington</itunes:name>
+      <itunes:email>holyhotmessmom@gmail.com</itunes:email>
+    </itunes:owner>
+    <itunes:image href="https://deow9bq0xqvbj.cloudfront.net/image-logo/2938889/HHM_Podcast_Logo_Apple_Square_5ma9en.png"/>
+    <item>
+      <title>Episode Title</title>
+      <description>Episode Description</description>
+      <pubDate>Sat, 05 Feb 2024 12:00:00 GMT</pubDate>
+      <enclosure url="https://mcdn.podbean.com/mf/web/m4be3j/Felicia_Morsette_SUbmission_mixdown77rvw.mp3" type="audio/mpeg"/>
+      <itunes:duration>01:24:56</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    <!-- Add more <item> elements for additional episodes -->
+  </channel>
+</rss>
