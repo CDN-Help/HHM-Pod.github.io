@@ -45,7 +45,7 @@
                 items.forEach(item => {
                     const title = item.querySelector("title").textContent;
                     const description = item.querySelector("description").textContent;
-                    const link = item.querySelector("link").textContent;
+                    const link = item.querySelector("enclosure")?.getAttribute("url") || "#";
 
                     const listItem = document.createElement("li");
                     listItem.classList.add("podcast-item");
